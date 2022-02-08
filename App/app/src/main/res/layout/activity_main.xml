@@ -19,7 +19,7 @@
             android:textAlignment="center"
             android:textSize="60sp"
             android:hint="@string/zero"
-            android:inputType="number"
+            android:inputType="numberSigned"
             android:maxLength="3"
             android:importantForAutofill="no"
             android:id="@+id/degrees_edit_text"/>
