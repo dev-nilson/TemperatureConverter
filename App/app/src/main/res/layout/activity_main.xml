@@ -7,29 +7,22 @@
     tools:context=".MainActivity"
     android:orientation="vertical">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:fontFamily="@font/bungee"
-        android:layout_marginTop="20dp"
-        android:text="@string/temperature_converter"
-        android:textAlignment="center"
-        android:textSize="40sp" />
-
-    <RadioGroup
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="50dp"
         android:layout_gravity="center">
 
         <EditText
-            android:layout_width="80dp"
-            android:layout_height="wrap_content"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
             android:textAlignment="center"
             android:textSize="60sp"
-            android:hint="0" />
+            android:hint="0"
+            android:inputType="number"
+            android:maxLength="3"
+            />
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -38,20 +31,25 @@
             android:gravity="center"
             android:layout_marginLeft="10dp">
 
-            <RadioButton
+            <RadioGroup
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="°C"
-                android:textSize="25sp"
-                android:checked="true"/>
+                android:layout_height="wrap_content">
 
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="°F"
-                android:textSize="25sp" />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="°C"
+                    android:textSize="25sp" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="°F"
+                    android:textSize="25sp" />
+
+            </RadioGroup>
         </LinearLayout>
-    </RadioGroup>
+    </LinearLayout>
 
     <Button
         android:layout_width="wrap_content"
@@ -59,7 +57,7 @@
         android:layout_gravity="center"
         android:fontFamily="@font/bungee"
         android:text="Convert"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="25dp"
         android:textSize="20sp" />
 
     <TextView
@@ -67,8 +65,8 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:fontFamily="@font/bungee"
-        android:layout_marginTop="20dp"
-        android:text="°F"
+        android:layout_marginTop="50dp"
+        android:text="°"
         android:textAlignment="center"
         android:textSize="100sp" />
 
