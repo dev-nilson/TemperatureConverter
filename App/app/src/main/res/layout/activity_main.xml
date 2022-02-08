@@ -72,7 +72,7 @@
         android:layout_marginTop="50dp"
         android:text="°"
         android:textAlignment="center"
-        android:textSize="100sp"
+        android:textSize="75sp"
         android:id="@+id/result_text_view" />
 
 </LinearLayout>

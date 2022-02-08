@@ -35,6 +35,12 @@ class MainActivity : AppCompatActivity() {
         val result = conversion.result
 
         val resultText = getString(R.string.result, result)
-        resultTextView.setText(resultText)
+
+        if (toFahrenheit) {
+            resultTextView.text = resultText + "F"
+        }
+        else {
+            resultTextView.text = resultText + "C"
+        }
     }
 }
