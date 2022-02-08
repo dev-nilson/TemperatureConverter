@@ -36,11 +36,18 @@ class MainActivity : AppCompatActivity() {
 
         val resultText = getString(R.string.result, result)
 
-        if (toFahrenheit) {
-            resultTextView.text = resultText + "F"
+        //  Check if EditView is empty to display a toast error message
+        //  (no invalid data type can be entered since EditView accepts numbers only)
+        if (degreesToConvert.isNullOrEmpty()) {
+            resultTextView.text = "Enter a number"
         }
         else {
-            resultTextView.text = resultText + "C"
+            if (toFahrenheit) {
+                resultTextView.text = resultText + "F"
+            }
+            else {
+                resultTextView.text = resultText + "C"
+            }
         }
     }
 }
