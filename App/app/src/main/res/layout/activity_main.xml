@@ -34,7 +34,8 @@
             <RadioGroup
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                tools:ignore="UselessParent">
+                tools:ignore="UselessParent"
+                android:id="@+id/temperature_unit_radio_group">
 
                 <RadioButton
                     android:layout_width="wrap_content"
@@ -60,7 +61,8 @@
         android:fontFamily="@font/bungee"
         android:text="@string/convert"
         android:layout_marginTop="25dp"
-        android:textSize="20sp" />
+        android:textSize="20sp"
+        android:onClick="calculateClick"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -68,7 +70,7 @@
         android:layout_gravity="center"
         android:fontFamily="@font/bungee"
         android:layout_marginTop="50dp"
-        android:text="@string/degree_symbol"
+        android:text="°"
         android:textAlignment="center"
         android:textSize="100sp"
         android:id="@+id/result_text_view" />
